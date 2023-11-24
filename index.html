@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="WindDev Future Tech">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AnimalTrail Plano Para Pets</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shurtcut icon" href="img/icons8-pata-30.png">
+</head>
+
+<body>
+
+    <!--Fazendo a navigation-->
+    <header id="topo">
+        <nav>
+            <a href="#"><img src="img/logonav.png"></a>
+
+            <ul>
+
+                <a href="#sobre">
+                    <p>sobre nós</p>
+                </a>
+                <a href="#planos">
+                    <p>planos</p>
+                </a>
+                <a href="#serviços">
+                    <p>serviços</p>
+                </a>
+            </ul>
+            <ul>
+                <a href="#maps">
+                    <li>contatos</li>
+                </a>
+            </ul>
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="img/menu_white_36dp.svg"> </button>
+            </div>
+        </nav>
+
+    <!--Menu hamburguer do menu mobile-->
+        <div class="mobile-menu">
+            <ul>
+
+                <a href="#sobre">
+                    <p>sobre nós</p>
+                </a>
+                <a href="#planos">
+                    <p>planos</p>
+                </a>
+                <a href="#serviços">
+                    <p>serviços</p>
+                </a>
+                <a href="#maps">
+                    <li>contatos</li>
+                </a>
+                <button onclick="menuShow()"><img class="icon" src="img/close_white_36dp.svg"> </button>
+            </ul>
+        </div>
+    </header>
+
+
+        <!--Section que guarda o carrossel-->
+    <section>
+
+        <div id="inicio">
+
+            <h1>Onde o amor e o cuidado encontram seu caminho</h1>
+
+                <!--carrossel com setas-->
+            <section id="carrossel">
+                <img src="img/fundobranco.png" name="slide" id="slide">
+                <div id="image"></div>
+            </section>
+            <img src="img/seta esquerda.png" class="ante" onClick="Ante()">
+            <img src="img/seta direita.png" class="prox" onClick="Prox()">
+        </div>
+    </section>
+
+    <div class="line"></div>
+
+        <!--Section Sobre Nós-->
+    <section>
+
+        <div id="sobre">
+            <h1>Sobre nós</h1>
+            <p>Animal Trail é um espaço dedicado ao cuidado e bem-estar do seu pet. Com uma equipe
+                de veterinários altamente especializados , instalações modernas, salas de consulta, cirurgia,
+                laboratrios de diagnósticos e áreas de internação, estamos equipados para lidar com todas as
+                necessidades médicas de seu melhor-amigo.</p>
+        </div>
+
+    </section>
+
+    <div class="line"></div>
+
+        <!--div que guarda a imagem planos-->
+    <div id="planos">
+        <img src="img/Plano_de_saúde_para_pets__2_-removebg-preview.png">
+    </div>
+
+        <!--Section que guarda os planos-->
+    <section id="planoa">
+
+        <!--todos planos-->
+        <section id="plan">
+            <div class="fora">
+                <div class="interno">
+                    <ul>
+                        <img src="img/iconosso.png">
+                        <h3>Basicão</h3>
+                        <li>Baixo custo</li>
+                    </ul>
+                    <div class="preço">
+                        <p>R$47,90 /mês</p>
+                    </div>
+                </div>
+                <a href="https://api.whatsapp.com/send?phone=5511962341509&text=Ol%C3%A1,%20gostaria%20de%20saber%20mais!"
+                    class="pbutton">Contatar</a>
+            </div>
+        </section>
+
+        <section id="plan">
+            <div class="fora">
+                <div class="interno">
+                    <ul>
+                        <img src="img/iconheart.png">
+                        <h3>Leve</h3>
+                        <li>Para cuidados de rotina</li>
+                    </ul>
+
+                    <div class="preço">
+                        <p>R$65,90 /mês</p>
+                    </div>
+                </div>
+                <a href="https://api.whatsapp.com/send?phone=5511962341509&text=Ol%C3%A1,%20gostaria%20de%20saber%20mais!"
+                    class="pbutton">Contatar</a>
+            </div>
+        </section>
+
+        <section id="plan">
+            <div class="fora">
+                <div class="interno">
+                    <ul>
+                        <img src="img/iconmoney.png">
+                        <h3>Ideal</h3>
+                        <li>Melhor custo benefício</li>
+                    </ul>
+
+                    <div class="preço">
+                        <p>R$89,90 /mês</p>
+                    </div>
+                </div>
+                <a href="https://api.whatsapp.com/send?phone=5511962341509&text=Ol%C3%A1,%20gostaria%20de%20saber%20mais!"
+                    class="pbutton">Contatar</a>
+            </div>
+        </section>
+
+        <section id="plan">
+            <div class="fora">
+                <div class="interno">
+                    <ul>
+                        <img src="img/iconstar.png">
+                        <h3>Premium</h3>
+                        <li>Mais cobertura</li>
+                    </ul>
+
+                    <div class="preço">
+                        <p>R$189,90 /mês</p>
+                    </div>
+                </div>
+                <a href="https://api.whatsapp.com/send?phone=5511962341509&text=Ol%C3%A1,%20gostaria%20de%20saber%20mais!"
+                    class="pbutton">Contatar</a>
+            </div>
+        </section>
+    </section>
+
+    <div class="line"></div>
+
+    <!--section banner qualidade-->
+    <section id="ultima">
+        <div id="quali">
+            <ul>
+                <img src="img/icons8-garantia-90.png">
+                <h1>Garantia de Qualidade</h1>
+            </ul>
+        </div>
+
+        <div id="catdog">
+            <img src="img/11142291-removebg-preview.png">
+        </div>
+
+        <!--banner qualidade mobile-->
+        <span id="quali-mobile">
+            <ul>
+                <img src="img/icons8-garantia-90.png">
+                <h1>Garantia de Qualidade</h1>
+            </ul>
+        </span>
+
+    </section>
+
+    <!--section anuncio de serviços-->
+    <section id="serviços">
+        <div id="ser">
+            <h1>Serviços</h1>
+            <h3>Esses são alguns dos serviços que somos especializados.</h3>
+            <ul>
+                <p>Check-Ups</p>
+                <p>Cirurgias</p>
+                <p>Internação</p>
+            </ul>
+            <ul>
+                <p>Odontologia</p>
+                <p>Urologia</p>
+                <p>Vacinas</p>
+            </ul>
+            <ul>
+                <p>Dermatologia</p>
+                <p>Oftamologia</p>
+                <p>Endocrinologia</p>
+            </ul>
+        </div>
+        <div>
+            <img src="img/gato.png">
+        </div>
+    </section>
+    <!--section duvidas-->
+    <section>
+        <div id="duvidas">
+            <div id="internodv">
+                <h1>Tire suas dúvidas!</h1>
+                <h3>Tire suas dúvidas pelo Whatsapp agora mesmo, clicando no botão abaixo.</h3>
+                <a
+                    href="#https://api.whatsapp.com/send?phone=5511962341509&text=Ol%C3%A1,%20gostaria%20de%20saber%20mais!">Gostaria
+                    de tirar uma dúvida </a>
+            </div>
+        </div>
+    </section>
+
+    <div class="line"></div>
+
+    <!--video do youtube com iframe-->
+    <section id="video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/VnQ7KSdE_Gk?si=wKjRRDFkzi9ylwFy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </section>
+
+    <div class="line"></div>
+
+
+    <!--section com comentarios dos clientes-->
+    <section id="clientes">
+
+        <div id="person">
+            <img src="img/cliente.png">
+        </div>
+
+        <div id="escrita">
+            <img src="img/espaço cliente.png">
+        </div>
+    <!--carrossel de comentarios-->
+        <div id="carrossel2">
+            <img id="carrocli" name="carroclie" src="img com/c1.png">
+            <form id="botoes_slide">
+                <input type="radio" id="v1" name="m" onClick="Muda(1)">
+                <input type="radio" id="v2" name="m" onClick="Muda(2)">
+                <input type="radio" id="v3" name="m" onClick="Muda(3)">
+                <input type="radio" id="v4" name="m" onClick="Muda(4)">
+                <input type="radio" id="v5" name="m" onClick="Muda(5)">
+                <input type="radio" id="v6" name="m" onClick="Muda(6)">
+            </form>
+        </div>
+    </section>
+
+    <div class="line"></div>
+
+    <!--section de contatos e localização-->
+    <section id="maps">
+
+        <div id="cntts">
+            <h1>Aonde nos encontrar?</h1>
+            <div id="cntt">
+                <h6>Contatos:</h6>
+
+                <ul>
+                    <li id="tel">(11) 3911-9284</li>
+                    <li id="mail">animaltrailofc@outlook.com</li>
+                </ul>
+
+                <a href="https://www.instagram.com/animaltrail_/"><img src="img/iconeinsta.png"></a>
+                <a
+                    href="https://api.whatsapp.com/send?phone=5511962341509&text=Ol%C3%A1,%20gostaria%20de%20saber%20mais!"><img
+                        src="img/iconezap.png"></a>
+            </div>
+        </div>
+
+        <!--iframe maps-->
+        <div id="foramap">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.3249097204834!2d-46.73036142449379!3d-23.52081366010411!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef8c1d371ec31%3A0x671c9325c275132e!2sETEC%20Prof%C2%B0%20Basilides%20de%20Godoy!5e0!3m2!1spt-BR!2sbr!4v1697563386756!5m2!1spt-BR!2sbr"
+                width="750" height="550" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+
+    <!--rodape site-->
+    <footer id="rodape">
+        <div id="pe">
+            <h2>Patrocinadores:</h2>
+            <div id="roda">
+                <img src="img/minaglogo.png">
+                <img src="img/whiskas logo.png">
+                <img src="img/pedigree logo.png">
+                <img src="img/petcleanLogo.png">
+            </div>
+    
+            <div id="l1ne"></div>
+
+            <h1>Animal Trail</h1>
+            <h3>Plano de saúde para pets</h3>
+            <ul>
+                <a href="#topo">
+                    <li>inicio</li>
+                </a>
+                <li>|</li>
+                <a href="#planos">
+                    <li>planos</li>
+                </a>
+                <li>|</li>
+                <a href="#serviços">
+                    <li>serviços</li>
+                </a>
+            </ul>
+            <h4>© 2023 Animal Trail. Todos os direitos reservados</h4>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
